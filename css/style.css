@@ -25,11 +25,6 @@ a {
 	cursor: pointer;
 	transition: .3s all;
 	outline: 0;
-	transition: .3s;
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-	-o-transition: .3s;
 }
 
 .btn_white {
@@ -44,7 +39,6 @@ a {
 
 .btn_min {
 	height: 50px;
-	padding: 5px 6px;
 }
 
 .btn:hover {
@@ -78,17 +72,17 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	height: 150px;
-	padding: 0 150px;
+	padding: 0 100px;
 }
 
 .header__left-block {
 	display: flex;
 	justify-content: space-between;
-	min-width: 84px;
+	min-width: 550px;
 }
 
 .header__logo {
-	max-width: 80px;
+	max-width: 95px;
 }
 
 .header__logo img {
@@ -122,49 +116,6 @@ a {
 
 .header__link:last-child {
 	margin-right: 0;
-}
-
-.sidepanel {
-	position: fixed;
-	left: 60px;
-	top: 240px;
-	height: 400px;
-	width: 25px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.sidepanel__text {
-	width: 120px;
-	height: 120px;
-	font-size: 14px;
-}
-
-.sidepanel__text span {
-	display: flex;
-	transform: rotate(-90deg) translateX(-50px);
-	-webkit-transform: rotate(-90deg) translateX(-50px);
-	-moz-transform: rotate(-90deg) translateX(-50px);
-	-ms-transform: rotate(-90deg) translateX(-50px);
-	-o-transform: rotate(-90deg) translateX(-50px);
-}
-
-.sidepanel__divider {
-	width: 1px;
-	height: 165px;
-	background-color: #000;
-}
-
-.sidepanel__icon {
-	width: 24px;
-	height: 24px;
-}
-
-
-.sidepanel__icon img {
-	width: 100%;
 }
 
 .preview {
@@ -498,7 +449,7 @@ a {
 
 .menu__item {
 	width: 320px;
-	min-height: 489px;
+	min-height: 490px;
 	background: #fff;
 	box-shadow: 0 4px 25px rgba(0, 0, 0, .25);
 	font-size: 16px;
@@ -665,6 +616,29 @@ a {
 	font-size: 20px;
 }
 
+.footer .social__block {
+	display: flex;
+	width: 230px;
+	justify-content: space-around;
+}
+
+.footer .social__block img {
+	width: 40px;
+	transition: .3s all;
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-ms-transition: .3s all;
+	-o-transition: .3s all;
+}
+
+.footer .social__block img:hover {
+	transform: scale(1.2, 1.2);
+	-webkit-transform: scale(1.2, 1.2);
+	-moz-transform: scale(1.2, 1.2);
+	-ms-transform: scale(1.2, 1.2);
+	-o-transform: scale(1.2, 1.2);
+}
+
 .footer .link {
 	display: block;
 	margin-top: 15px;
@@ -672,15 +646,15 @@ a {
 	color: #fff;
 }
 
-.footer .pepper img {
-	width: 100px;
+.footer__logo img {
+	width: 110px;
 }
 
 .footer .call {
 	text-align: right;
 }
 
-/* Модальное окно */
+/* MODAL */
 
 .modal {
 	position: fixed;
@@ -749,9 +723,6 @@ a {
 	margin: 0 auto;
 }
 
-
-/* анимация */
-
 .show {
 	display: block;
 }
@@ -762,12 +733,12 @@ a {
 
 .fade {
 	animation-name: fade;
-	animation-duration: 1.3s;
+	animation-duration: 1.7s;
 }
 
 @keyframes fade {
 	from {
-		opacity: .1;
+		opacity: 0.1;
 	}
 
 	to {
