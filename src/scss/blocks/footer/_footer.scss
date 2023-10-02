@@ -1,0 +1,43 @@
+.footer {
+	min-height: 180px;
+	background-color: #303030;
+	padding: 45px 0 50px 0;
+	color: #fff;
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.subtitle {
+		font-size: 20px;
+	}
+
+	.social__block {
+		display: flex;
+		width: 230px;
+		justify-content: space-around;
+		img {
+			width: 40px;
+			transition: 0.3s all;
+
+			&:hover {
+				transform: scale(1.2, 1.2);
+			}
+		}
+	}
+	.footer__logo {
+		img {
+			width: 110px;
+		}
+	}
+	.link {
+		display: block;
+		margin-top: 15px;
+		font-size: 16px;
+		color: #fff;
+	}
+	.call {
+		text-align: right;
+	}
+}

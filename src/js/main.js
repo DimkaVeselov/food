@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	function showModalByScroll() {
 		if (
-			window.pageYOffset + document.documentElement.clientHeight >=
+			window.scrollY + document.documentElement.clientHeight >=
 			document.documentElement.scrollHeight - 1
 		) {
 			openModal();
@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// TIMER
 
-	const deadline = '2023-08-04';
+	const deadline = '2023-12-31';
 
 	function getTImeRemaining(endtime) {
 		let days, hours, minutes, seconds;
