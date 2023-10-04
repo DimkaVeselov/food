@@ -78,6 +78,10 @@ a {
     opacity: 1;
   }
 }
+.status {
+  margin: 10px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -132,6 +136,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 .sidepanel__text {
   width: 120px;
@@ -150,9 +155,14 @@ a {
 .sidepanel__icon {
   width: 24px;
   height: 24px;
+  cursor: pointer;
+}
+.sidepanel__icon:hover img {
+  transform: scale(1.2);
 }
 .sidepanel__icon img {
   width: 100%;
+  transition: all 0.35s ease;
 }
 
 .preview {
